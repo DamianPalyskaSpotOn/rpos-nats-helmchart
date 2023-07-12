@@ -167,6 +167,7 @@ writeDeadline: ""
 ## to specify the proper filename according to the image version.
 ##
 natsFilename: nats-server
+natsConfigPath: /opt/bitnami/nats
 ## @param configuration [string] Specify content for NATS configuration file (generated based on other parameters otherwise)
 ## e.g:
 ## configuration: |-

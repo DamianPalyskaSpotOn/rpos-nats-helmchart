@@ -151,7 +151,7 @@ spec:
           {{- end }}
           volumeMounts:
             - name: config
-              mountPath: /bitnami/nats/conf/{{ .Values.natsFilename }}.conf
+              mountPath: {{ .Values.natsConfigPath }}/{{ .Values.natsFilename }}.conf
               subPath: {{ .Values.natsFilename }}.conf
             {{- if .Values.persistence.enabled }}
             - name: data
